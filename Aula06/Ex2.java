@@ -31,7 +31,7 @@ public class Ex2 {
                         Contacto person = new Contacto(nome, id, num, email);
                         classee.addContact(person);
                     }else {Contacto person = new Contacto(nome, id, num);}
-                    
+                    addcontact(person)
 
                 case 2:
                 case 3:
