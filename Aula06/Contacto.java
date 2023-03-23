@@ -2,7 +2,7 @@ package Aula06;
 
 import java.util.ArrayList;
 
-import Aula05.dateGen;
+
 
 
 
@@ -14,7 +14,7 @@ public class Contacto extends newPessoa{
     private static int count = 0;
     private ArrayList <Contacto> contactList;
 
-    public Contacto(String nome,   int ID, int num, String email){
+    public Contacto(String nome,   int ID, int num, String email) throws Exception{
             super(nome);
             if(validNum(num) || validEmail(email)){
             this.ID = count ++;
@@ -96,7 +96,7 @@ public void listContacts(){
 public void editContact(int id){
     for (Contacto contacto : contactList){
         if(contacto.getID() == ID){
-            System.out.println(contacto);
+            removeContact(id);;
             return;
         }
     }
@@ -109,7 +109,10 @@ public boolean validNum(int num){
     else return false;
 }
 public boolean validEmail(String email){
-    
+    if(email.matches("^[\\w.-]+@[\\w.-]+\\.[\\w]{2,}$")){
+        return true;
+    }
+    else return false;
 }
 }
 

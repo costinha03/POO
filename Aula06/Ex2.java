@@ -2,12 +2,15 @@ package Aula06;
 
 import Aula06.Contacto;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Ex2 {
     static Scanner sc = new Scanner(System.in);
     public static void main(String[] args){
             final Contacto classee = new Contacto(null, 0, 0);
+            ArrayList <Contacto> contactList;
+            Contacto person;
             int id = 0;
             int op;
             do {System.out.print("Escolha uma opção (1-5)");
@@ -27,13 +30,31 @@ public class Ex2 {
                     System.out.print("Insira o email: ");
                     String email = sc.nextLine();
                     id++;
-                    if (email != ""){
-                        Contacto person = new Contacto(nome, id, num, email);
-                        classee.addContact(person);
-                    }else {Contacto person = new Contacto(nome, id, num);}
-                    
+                    if (classee.validEmail(email)){
+                         person = new Contacto(nome, id, num, email);
+                        
+                    }else { person = new Contacto(nome, id, num);}
+                    classee.addContact(person);
 
                 case 2:
+                    System.out.print("Insira o ID do contacto: ");
+                    id = sc.nextInt();
+                    classee.editContact(id);
+                    System.out.print("Introduza os dados do contacto");
+                    System.out.print("Nome: ");
+                    nome = sc.nextLine();
+                    System.out.print("Número de telefone: ");
+                    num = sc.nextInt();
+                    System.out.println();
+                    System.out.print("Insira o email: ");
+                    email = sc.nextLine();
+
+                    if (classee.validEmail(email)){
+                         person = new Contacto(nome, id, num, email);
+                        
+                    }else { person = new Contacto(nome, id, num);}
+                    classee.addContact(person);
+
                 case 3:
                     System.out.print("Insira o ID do contacto: ");
                     id = sc.nextInt();
