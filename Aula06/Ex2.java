@@ -14,7 +14,7 @@ public class Ex2 {
             int id = 0;
             int op;
             do {System.out.print("Escolha uma opção (1-5)");
-            System.out.print("1- Inserir contacto \n2- Alterar contacto \n3- Apagar contacto \n4- Procurar contacto \n5- Listar contactos \n 0- Sair");~
+            System.out.print("1- Inserir contacto \n2- Alterar contacto \n3- Apagar contacto \n4- Procurar contacto \n5- Listar contactos \n 0- Sair");
             op = sc.nextInt();
             switch(op){
                 case 0:
