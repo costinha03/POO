@@ -30,11 +30,19 @@ public class Ex2 {
                     System.out.print("Insira o email: ");
                     String email = sc.nextLine();
                     id++;
+
                     if (classee.validEmail(email)){
                          person = new Contacto(nome, id, num, email);
                         
                     }else { person = new Contacto(nome, id, num);}
                     classee.addContact(person);
+
+                    if (email != ""){
+                         person = new Contacto(nome, id, num, email);
+                        classee.addContact(person);
+                    }else { person = new Contacto(nome, id, num);}
+                    classee.addContact(person);
+
 
                 case 2:
                     System.out.print("Insira o ID do contacto: ");
