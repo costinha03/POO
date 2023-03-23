@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class Ex2 {
     static Scanner sc = new Scanner(System.in);
-    public static void main(String[] args){
+    public static void main(String[] args) throws Exception{
             final Contacto classee = new Contacto(null, 0, 0);
             ArrayList <Contacto> contactList;
             Contacto person;
