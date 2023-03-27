@@ -21,13 +21,6 @@ public abstract class Forma {
         this.cor = cor;
     }
 
-    public String equals(Forma f) {
-        if (cor.equals(f.getCor())) {
-            return "Figuras iguais";
-        } else {
-            return "Figuras diferentes";
-        }
-    }
 
     @Override
     public String toString() {
