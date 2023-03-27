@@ -20,7 +20,6 @@ public class Circulo extends Forma {
         return getCor();
     }
 
-    // Contrutores
 
     public Circulo(String cor) {
         super(cor);
@@ -46,7 +45,6 @@ public class Circulo extends Forma {
         this.raio = raio;
     }
 
-    // Getters e setters
 
     public double getRaio() {
         return raio;

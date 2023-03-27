@@ -4,7 +4,7 @@ public class Ponto {
     private double x;
     private double y;
 
-    // Construtores
+    
 
     public Ponto() {
 
@@ -25,7 +25,7 @@ public class Ponto {
         return y;
     }
 
-    // Overrides
+    
 
     @Override
     public String toString() {

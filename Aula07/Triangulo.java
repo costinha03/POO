@@ -102,8 +102,7 @@ public class Triangulo extends Forma {
         return (l1 + l2 + l3);
     }
 
-    public double Area() { // Area= √p(p−a)(p−b)(p−c) sendo a,b,c os lados do triangulo e p metade do
-                           // perimetro
+    public double Area() { 
         double p = this.Perimetro() / 2;
         return Math.sqrt(p * (p - l1) * (p - l2) * (p - l3));
     }
