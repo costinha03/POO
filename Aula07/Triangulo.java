@@ -64,7 +64,37 @@ public class Triangulo extends Forma {
                 + area() + "]";
     }
 
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        long temp;
+        temp = Double.doubleToLongBits(l1);
+        result = prime * result + (int) (temp ^ (temp >>> 32));
+        temp = Double.doubleToLongBits(l2);
+        result = prime * result + (int) (temp ^ (temp >>> 32));
+        temp = Double.doubleToLongBits(l3);
+        result = prime * result + (int) (temp ^ (temp >>> 32));
+        return result;
+    }
 
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Triangulo other = (Triangulo) obj;
+        if (Double.doubleToLongBits(l1) != Double.doubleToLongBits(other.l1))
+            return false;
+        if (Double.doubleToLongBits(l2) != Double.doubleToLongBits(other.l2))
+            return false;
+        if (Double.doubleToLongBits(l3) != Double.doubleToLongBits(other.l3))
+            return false;
+        return true;
+    }
 
     // outros métodos
 

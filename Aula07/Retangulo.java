@@ -1,5 +1,7 @@
 package Aula07;
 
+import java.util.Objects;
+
 public class Retangulo extends Forma {
     private double comp;
     private double alt;
@@ -50,6 +52,33 @@ public class Retangulo extends Forma {
     public String toString() {
         return "Retangulo [comprimento=" + comp + ", altura=" + alt + ", Area=" + area() + ", Perimetro=" + perimetro()
                 + "]";
+    }
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        long temp;
+        temp = Double.doubleToLongBits(alt);
+        result = prime * result + (int) (temp ^ (temp >>> 32));
+        temp = Double.doubleToLongBits(comp);
+        result = prime * result + (int) (temp ^ (temp >>> 32));
+        return result;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Retangulo other = (Retangulo) obj;
+        if (Double.doubleToLongBits(alt) != Double.doubleToLongBits(other.alt))
+            return false;
+        if (Double.doubleToLongBits(comp) != Double.doubleToLongBits(other.comp))
+            return false;
+        return true;
     }
 
 
