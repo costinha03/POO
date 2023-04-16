@@ -1,5 +1,4 @@
-package aula08;
-
+package Aula08;
 
 public class Ex1 {
     public static void main(String[] args) {
@@ -33,11 +32,11 @@ public class Ex1 {
 
         for (Veiculo veiculo : empresa.getVeiculosList()) {
             if (veiculo.distanciaTotal() == max) {
-                System.out.println("O veículo com mais km percorridos foi " + veiculo.getMarca() + " " + veiculo.getModelo()+ " com "  + veiculo.distanciaTotal() + " km");
+                System.out.println("O veículo com mais km percorridos foi " + veiculo.getMarca() + " "
+                        + veiculo.getModelo() + " com " + veiculo.distanciaTotal() + " km");
                 System.out.println(veiculo);
                 System.out.println();
             }
         }
     }
 }
-

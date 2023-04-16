@@ -1,5 +1,4 @@
-package aula08;
-
+package Aula08;
 
 public class automovel extends Veiculo {
     private int nrquadro;
@@ -18,5 +17,5 @@ public class automovel extends Veiculo {
     public int getBagageira() {
         return bagageira;
     }
-    
+
 }
