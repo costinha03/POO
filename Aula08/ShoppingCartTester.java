@@ -1,4 +1,4 @@
-package aula08;
+package Aula08;
 
 public class ShoppingCartTester {
     public static void main(String[] args) {
