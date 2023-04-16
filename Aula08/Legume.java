@@ -1,4 +1,4 @@
-package aula08;
+package Aula08;
 
 public class Legume extends Alimento implements Vegetariana {
     private String nome;

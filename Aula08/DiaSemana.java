@@ -1,4 +1,4 @@
-package aula08;
+package Aula08;
 
 public enum DiaSemana {
     SEGUNDA, TERÇA, QUARTA, QUINTA, SEXTA;

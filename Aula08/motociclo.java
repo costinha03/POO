@@ -1,4 +1,4 @@
-package aula08;
+package Aula08;
 
 public class motociclo extends Veiculo {
     private String tipo;

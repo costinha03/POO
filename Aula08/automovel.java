@@ -1,4 +1,4 @@
-package aula08;
+package Aula08;
 
 
 public class automovel extends Veiculo {

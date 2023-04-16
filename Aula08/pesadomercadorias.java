@@ -1,4 +1,4 @@
-package aula08;
+package Aula08;
 
 public class pesadomercadorias  extends Veiculo {
     private int nrquadro;

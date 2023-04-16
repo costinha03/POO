@@ -1,4 +1,4 @@
-package aula08;
+package Aula08;
 
 public class pesadopassageiros extends Veiculo {
     private int numQuadro;
