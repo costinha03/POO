@@ -19,7 +19,7 @@ public class ComercialPlane extends Plane {
 
     @Override
     public String toString() {
-        return super.toString() + "Número de tripulantes: " + getCrewMembers();
+        return super.toString() + ", Número de tripulantes: " + getCrewMembers();
     }
 
     @Override

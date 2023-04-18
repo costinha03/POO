@@ -68,7 +68,7 @@ public abstract class Plane {
         return " Modelo: " + getModel() +
                 ", ID: " + getID() +
                 ", Fabricante: " + getManufacturer() +
-                ", Ano de produção: " + getProdYear() +
+                ", Ano de fabrico: " + getProdYear() +
                 ", Velocidade máxima: " + getMaxSpeed() +
                 ", Lotação:  " + getMaxPassengers();
 
