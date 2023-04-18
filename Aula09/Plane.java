@@ -1,6 +1,6 @@
 package Aula09;
 
-public class Plane {
+public abstract class Plane {
     String Model, ID, Manufacturer;
     int prodYear, maxSpeed, maxPassengers;
 
@@ -60,6 +60,8 @@ public class Plane {
     public void setMaxPassengers(int maxPassengers) {
         this.maxPassengers = maxPassengers;
     }
+
+    public abstract String getPlaneType();
 
     @Override
     public String toString() {

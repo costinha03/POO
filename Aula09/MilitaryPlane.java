@@ -20,11 +20,12 @@ public class MilitaryPlane extends Plane {
 
     @Override
     public String toString() {
-        return super.toString() + "Number of ammunitions: " + getAmmunition();
+        return super.toString() + "Número de munições: " + getAmmunition();
     }
 
     @Override
     public String getPlaneType() {
-        return "Military";
+        return "Militar";
     }
+
 }
