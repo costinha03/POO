@@ -1,28 +1,23 @@
 package Aula10;
 
-import java.util.Map;
-import java.util.TreeMap;
-import java.util.TreeSet;
+import java.util.*;
 
 public class Counter {
     public static void main(String[] args) {
-        String str = "Hello World";
-        char[] arr = str.replaceAll("\\s+", "").toCharArray();
-        Map<Character, TreeSet<Integer>> mapa = new TreeMap<>();
+        String frase = "Hello World";
+        Map<Character, List<Integer>> caracteres = new HashMap<>();
 
-        for (int i = 0; i < arr.length; i++) {
-            Character c = arr[i];
-            if (mapa.containsKey(c)) {
-                mapa.get(c).add(i);
-            } else {
-                TreeSet<Integer> set = new TreeSet<>();
-                set.add(i);
-                mapa.put(c, set);
+        for (int i = 0; i < frase.length(); i++) {
+            char c = frase.charAt(i);
+
+            if (!caracteres.containsKey(c)) {
+                caracteres.put(c, new ArrayList<Integer>());
             }
 
+            caracteres.get(c).add(i);
         }
 
-        System.out.println(mapa.entrySet());
+        System.out.println(caracteres);
     }
 
 }
