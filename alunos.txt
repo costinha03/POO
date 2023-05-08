@@ -1,4 +1,4 @@
-John Doe|12.5|14|10.75
+NPC|12.5|14|10.75
 Jane Smith|19|18.5|20
 Alex Johnson|16.25|15.5|17
 Michael Davis|13.75|14.25|13.5

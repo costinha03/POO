@@ -19,12 +19,12 @@ public class GradebookTester {
         gradebook.removeStudent("Jane Smith");
 
         // Retrieve a student from the collection
-        Student student = gradebook.getStudent("John Doe");
+        Student student = gradebook.getStudent("NPC");
         System.out.println(student.toString());
 
         // Calculate the average grade for a specific student
-        double averageGrade = gradebook.calculateAverageGrade("John Doe");
-        System.out.printf("Average grade for John Doe: " + String.format("%.2f", averageGrade));
+        double averageGrade = gradebook.calculateAverageGrade("NPC");
+        System.out.printf("Average grade for NPC: " + String.format("%.2f", averageGrade));
         System.out.print("\n");
 
         // Print a summary of all students in the collection
