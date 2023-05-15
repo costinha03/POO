@@ -3,11 +3,11 @@ package Aula11;
 import java.util.List;
 
 public class Customer {
-    private int customerId;
+    private static int customerId;
     private List<Double> meterReadings;
 
-    public Customer(int customerId, List<Double> meterReadings) {
-        this.customerId = customerId;
+    public Customer(int iD, List<Double> meterReadings) {
+        Customer.customerId = iD;
         this.meterReadings = meterReadings;
     }
 
@@ -16,7 +16,7 @@ public class Customer {
     }
 
     public void setCustomerId(int customerId) {
-        this.customerId = customerId;
+        Customer.customerId = customerId;
     }
 
     public List<Double> getMeterReadings() {
