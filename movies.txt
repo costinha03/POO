@@ -1,4 +1,3 @@
-name	score	rating	genre	running time
 The League of Extraordinary Gentlemen	43.2	PG-13	action	110
 Old School	54.7	R	comedy	92
 The Recruit	62.6	PG-13	suspense	115
@@ -12,7 +11,7 @@ The Hunted	54.0	R	action	94
 Freddy vs. Jason	47.3	R	horror	97
 Deliver Us From Eva	61.8	R	comedy	105
 Matchstick Men	68.9	PG-13	comedy	116
-big fish	78.0	PG-13	drama	125
+Big fish	78.0	PG-13	drama	125
 The Italian Job	66.5	PG-13	action	111
 Cabin Fever	54.3	R	horror	93
 Intolerable Cruelty	67.1	PG-13	comedy	100
