@@ -6,7 +6,7 @@
 ### *a)*
 
 ```
-Cliente: NIF, nome, endereço, num_carta;
+Cliente: <br>NIF<br>, nome, endereço, num_carta;
 Aluguer: número, data, duração;
 Balcão: número, nome, endereço;
 Veículo: matrícula, marca, ano;
